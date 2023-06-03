@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "systic_interface.h": "c",
+        "nvic_private.h": "c",
+        "systic_config.h": "c",
+        "std_types.h": "c",
+        "systic_private.h": "c",
+        "irreciever_interface.h": "c",
+        "irreciever_config.h": "c",
+        "gpio_interface.h": "c",
+        "spi_config.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}

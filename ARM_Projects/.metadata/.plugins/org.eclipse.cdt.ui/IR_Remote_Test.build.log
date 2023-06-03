@@ -1,0 +1,11 @@
+22:02:21 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
+make all 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8811	    160	    652	   9623	   2597	IR_Remote_Test.elf
+Finished building: IR_Remote_Test.siz
+ 
+
+22:02:22 Build Finished (took 1s.163ms)
+

@@ -1,0 +1,9 @@
+14:44:11 **** Incremental Build of configuration Debug for project SSD_ARM_CountFrom0To10AndDecount ****
+make all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[F:\ITI_TOOLS\01- Embedded Systems AVR Tools\01- IMT SDK\IMT_SDK_Win_64\WinARM\Build Tools\2.10-20180103-1919\bin;F:\ITI_TOOLS\01- Embedded Systems AVR Tools\01- IMT SDK\IMT_SDK_Win_64\WinARM\ArmGCC\bin;F:/0_ITI/ITI_TOOLS/01- Embedded Systems AVR Tools/01- IMT SDK/IMT_SDK_Win_64/jre/bin/server;F:/0_ITI/ITI_TOOLS/01- Embedded Systems AVR Tools/01- IMT SDK/IMT_SDK_Win_64/jre/bin;F:/0_ITI/ITI_TOOLS/01- Embedded Systems AVR Tools/01- IMT SDK/IMT_SDK_Win_64/jre/lib/amd64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microchip\xc8\v2.40\bin;C:\Program Files (x86)\PICCDEMO;C:\MinGW\mingw64\bin;C:\Windows\System32\cmd.exe;C:\Program Files\Git\cmd;C:\Users\Hossam Elzhar\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Hossam Elzhar\AppData\Local\Programs\Python\Python311\;C:\Users\Hossam Elzhar\AppData\Local\Microsoft\WindowsApps;C:\MinGW\mingw64\bin;;C:\Users\Hossam Elzhar\AppData\Local\Programs\Microsoft VS Code\bin;F:\0_ITI\ITI_TOOLS\01- Embedded Systems AVR Tools\01- IMT SDK\IMT_SDK_Win_64]
+
+14:44:11 Build Finished (took 162ms)
+

@@ -1,0 +1,12 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Test_LED_Matrix Debug,org.eclipse.launchbar.core.descriptorType.default\:UpCount_DownCount_On_7Seg_ Debug,org.eclipse.launchbar.core.descriptorType.default\:SevenSegUpcountDownCount Debug,org.eclipse.launchbar.core.descriptorType.default\:LED_MAtrix Debug,org.eclipse.launchbar.core.descriptorType.default\:Hello_EXTI Debug,org.eclipse.launchbar.core.descriptorType.default\:Hello_IR Debug,org.eclipse.launchbar.core.descriptorType.default\:IR_Remote_Test Debug
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Delay_Using_SYSTICK\ Debug/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:Delay_Using_SYSTICK\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Hello_EXTI\ Debug/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:Hello_EXTI\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:LED_MAtrix\ Debug/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:LED_MAtrix\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:UpCount_DownCount_On_7Seg_\ Debug/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:UpCount_DownCount_On_7Seg_\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

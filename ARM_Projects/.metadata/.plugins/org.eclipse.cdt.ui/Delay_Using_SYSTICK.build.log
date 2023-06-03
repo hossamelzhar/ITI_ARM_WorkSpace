@@ -1,0 +1,11 @@
+17:31:10 **** Incremental Build of configuration Debug for project Delay_Using_SYSTICK ****
+make all 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "Delay_Using_SYSTICK.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8011	    160	    416	   8587	   218b	Delay_Using_SYSTICK.elf
+Finished building: Delay_Using_SYSTICK.siz
+ 
+
+17:31:11 Build Finished (took 797ms)
+

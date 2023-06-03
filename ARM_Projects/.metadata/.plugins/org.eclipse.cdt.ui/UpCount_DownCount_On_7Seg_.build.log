@@ -1,0 +1,11 @@
+14:38:09 **** Incremental Build of configuration Debug for project UpCount_DownCount_On_7Seg_ ****
+make all 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "UpCount_DownCount_On_7Seg_.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8635	    184	    416	   9235	   2413	UpCount_DownCount_On_7Seg_.elf
+Finished building: UpCount_DownCount_On_7Seg_.siz
+ 
+
+14:38:09 Build Finished (took 835ms)
+

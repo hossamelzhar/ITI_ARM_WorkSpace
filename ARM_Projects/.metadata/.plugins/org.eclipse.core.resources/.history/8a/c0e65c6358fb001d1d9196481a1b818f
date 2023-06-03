@@ -1,0 +1,147 @@
+/**********************************************************************************************
+ * Author:          Hossam M. Elzhar
+ * Creation Data:   25 MAY, 2023
+ * Version:         v1.0
+ * Compiler:        GNU ARM-GCC
+ *********************************************************************************************/
+
+
+#include "BIT_MATH.h"
+#include "STD_Types.h"
+
+#include "GPIO_interface.h"
+#include "SYSTIC_interface.h"
+#include "RCC_interface.h"
+#include "NVIC_interface.h"
+#include "EXTI_interface.h"
+
+#include "IRReciever_interface.h"
+#include "IRReciever_private.h"
+#include "IRReciever_config.h"
+
+volatile u32 IRReciever_u8FrameArray[40];
+volatile u8 IRReciever_u8StartOfFrameFlag;
+volatile u8 IRReciever_u8ArrayCounter;
+volatile u8 IRReciever_u8RecievingDoneFlag;
+
+
+void HIRReciever_voidInit(void)
+{
+    MRCC_voidInit();
+    MRCC_voidEnablePeripheralClock(RCC_AHB1, GPIOA_ID);
+
+    MGPIO_voidSetPinMode(GPIOA, PIN0, INPUT);
+    MGPIO_voidSetInputConnectionType(GPIOA, PIN0, PULLUP);
+
+    MNVIC_voidInit();
+    MNVIC_voidEnablePeripheralInterrupt(MNVIC_EXTI0);
+
+    MEXTI_voidInit();
+    MEXTI_voidChangeSenseMode(MEXTI_LINE_0, MEXTI_FALLING_EDGE);
+    MEXTI_voidSetCallBack(MNVIC_EXTI0, &HIRReciever_voidRecieveData);
+    MEXTI_voidEnableInterrupt(MNVIC_EXTI0);
+
+    MSYSTICK_voidInit();
+    MSYSTICK_voidSetCallBack(&Frame_Completed);
+    MSYSTICK_voidInterruptEnable();
+
+}
+
+
+static void HIRReciever_voidRecieveData(void)
+{
+    if(IRReciever_u8StartOfFrameFlag == FLAG_NOT_ACTIVE)//First Falling Edge//First Interrupt Enterance
+    {
+        MSYSTICK_voidSetPreloadValue(START_BIT_TIME);
+        IRReciever_u8StartOfFrameFlag = FLAG_ACTIVE;
+    }
+    else
+    {
+        IRReciever_u8FrameArray[IRReciever_u8ArrayCounter] = MSYSTICK_u32GetElpasedTime();
+        MSYSTICK_voidStop();
+        MSYSTICK_voidSetPreloadValue(FRAME_BITS_TIME);        
+        IRReciever_u8ArrayCounter++;
+    }
+}
+
+static void Frame_Completed(void)
+{
+    IRReciever_u8RecievingDoneFlag = FLAG_ACTIVE;
+}
+
+u8 HIRReciever_u8IsDataRecieved(void)
+{
+    u8 Local_u8RecievingStatus = NOT_RECIEVED_YET;
+
+    if(IRReciever_u8RecievingDoneFlag == FLAG_ACTIVE)
+    {
+        Local_u8RecievingStatus = RECIEVED;
+        IRReciever_u8RecievingDoneFlag = FLAG_NOT_ACTIVE;
+    }else{}
+
+    return Local_u8RecievingStatus;
+}
+
+void HIRReciever_u8DecodeFrame(u8 * Copy_pu8RecievedData)
+{
+    u8 Local_u8Counter;
+    (*Copy_pu8RecievedData) = 0;
+    //Stop SYSTICK
+    MSYSTICK_voidStop();
+    // Reset The Start Of Frame Flag
+    IRReciever_u8StartOfFrameFlag = FLAG_NOT_ACTIVE; 
+    
+
+    for(Local_u8Counter = DATA_START_BIT; Local_u8Counter<DATA_END_BIT; Local_u8Counter++)
+    {
+        if((IRReciever_u8FrameArray[Local_u8Counter] >= ZERO_BIT_TIME_BEGIN) && (IRReciever_u8FrameArray[Local_u8Counter] <= ZERO_BIT_TIME_END))
+        {
+            CLEAR_BIT((*Copy_pu8RecievedData), Local_u8Counter - DATA_START_BIT);
+        }
+        elseif((IRReciever_u8FrameArray[Local_u8Counter] >= ONE_BIT_TIME_BEGIN) && (IRReciever_u8FrameArray[Local_u8Counter] <= ONE_BIT_TIME_END))
+        {
+            SET_BIT((*Copy_pu8RecievedData), Local_u8Counter - DATA_START_BIT);
+        }else{}
+        
+    }
+
+    //Reset Array Counter
+    IRReciever_u8ArrayCounter = RESET;
+}
+
+void HIRReciever_voidGetPressedKey(u8 * Copy_pu8ButtonPressed)
+{
+    switch( (*Copy_pu8ButtonPressed) )
+    {
+        case 12:
+            *Copy_pu8ButtonPressed = 1;
+            break;
+        case 13:
+            *Copy_pu8ButtonPressed = 2;
+            break;
+        case 14:
+            *Copy_pu8ButtonPressed = 3;
+            break;
+        case 15:
+            *Copy_pu8ButtonPressed = 4;
+            break;
+        case 16:
+            *Copy_pu8ButtonPressed = 5;
+            break;
+        case 17:
+            *Copy_pu8ButtonPressed = 6;
+            break;
+        case 18:
+            *Copy_pu8ButtonPressed = 7;
+            break;
+        case 19:
+            *Copy_pu8ButtonPressed = 8;
+            break;
+        case 20:
+            *Copy_pu8ButtonPressed = 9;
+            break;
+        case 21:
+            *Copy_pu8ButtonPressed = 10;
+            break;
+    }
+}
