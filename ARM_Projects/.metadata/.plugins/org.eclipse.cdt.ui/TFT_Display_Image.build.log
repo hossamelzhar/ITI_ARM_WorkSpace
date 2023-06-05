@@ -1,0 +1,11 @@
+03:17:27 **** Incremental Build of configuration Debug for project TFT_Display_Image ****
+make all 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "TFT_Display_Image.elf"
+   text	   data	    bss	    dec	    hex	filename
+  49579	    160	    420	  50159	   c3ef	TFT_Display_Image.elf
+Finished building: TFT_Display_Image.siz
+ 
+
+03:17:28 Build Finished (took 1s.467ms)
+

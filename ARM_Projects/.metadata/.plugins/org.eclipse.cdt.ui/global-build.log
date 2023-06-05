@@ -1,8 +1,4 @@
-19:27:21 **** Clean-only build of configuration Debug for project Hello_IR ****
-make clean 
-rm -rf  ./system/src/stm32f4-hal/stm32f4xx_hal.o ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o ./system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash.o ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o ./system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.o ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f4xx.o ./system/src/cmsis/vectors_stm32f401xc.o  ./src/EXTI_program.o ./src/GPIO_program.o ./src/NVIC_program.o ./src/RCC_program.o ./src/STK_program.o ./src/_initialize_hardware.o ./src/main.o ./src/stm32f4xx_hal_msp.o  Hello_IR.hex  Hello_IR.siz  ./system/src/stm32f4-hal/stm32f4xx_hal.d ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.d ./system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.d ./system/src/stm32f4-hal/stm32f4xx_hal_flash.d ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.d ./system/src/stm32f4-hal/stm32f4xx_hal_iwdg.d ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.d ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.d  ./system/src/newlib/_exit.d ./system/src/newlib/_sbrk.d ./system/src/newlib/_startup.d ./system/src/newlib/_syscalls.d ./system/src/newlib/assert.d  ./system/src/diag/Trace.d ./system/src/diag/trace_impl.d  ./system/src/cortexm/_initialize_hardware.d ./system/src/cortexm/_reset_hardware.d ./system/src/cortexm/exception_handlers.d  ./system/src/cmsis/system_stm32f4xx.d ./system/src/cmsis/vectors_stm32f401xc.d  ./src/EXTI_program.d ./src/GPIO_program.d ./src/NVIC_program.d ./src/RCC_program.d ./src/STK_program.d ./src/_initialize_hardware.d ./src/main.d ./src/stm32f4xx_hal_msp.d  ./system/src/newlib/_cxx.d  Hello_IR.elf
- 
-19:27:23 **** Build of configuration Debug for project Hello_IR ****
+03:11:03 **** Build of configuration Debug for project TFT_Display_Image ****
 make all 
 Building file: ../system/src/stm32f4-hal/stm32f4xx_hal.c
 Invoking: Cross ARM GNU C Compiler
@@ -109,57 +105,38 @@ Invoking: Cross ARM GNU C Compiler
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"system/src/cmsis/vectors_stm32f401xc.d" -MT"system/src/cmsis/vectors_stm32f401xc.o" -c -o "system/src/cmsis/vectors_stm32f401xc.o" "../system/src/cmsis/vectors_stm32f401xc.c"
 Finished building: ../system/src/cmsis/vectors_stm32f401xc.c
  
-Building file: ../src/EXTI_program.c
-Invoking: Cross ARM GNU C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/EXTI_program.d" -MT"src/EXTI_program.o" -c -o "src/EXTI_program.o" "../src/EXTI_program.c"
-../src/EXTI_program.c:21:1: warning: braces around scalar initializer
- static void (*pvCallBack[16])(void) = {{NULL}};
- ^~~~~~
-../src/EXTI_program.c:21:1: note: (near initialization for 'pvCallBack[0]')
-Finished building: ../src/EXTI_program.c
- 
 Building file: ../src/GPIO_program.c
 Invoking: Cross ARM GNU C Compiler
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/GPIO_program.d" -MT"src/GPIO_program.o" -c -o "src/GPIO_program.o" "../src/GPIO_program.c"
-../src/GPIO_program.c: In function 'MGPIO_u8GetPinValue':
-../src/GPIO_program.c:646:12: warning: 'Local_u8PinValue' may be used uninitialized in this function [-Wmaybe-uninitialized]
-     return Local_u8PinValue;
-            ^~~~~~~~~~~~~~~~
 Finished building: ../src/GPIO_program.c
- 
-Building file: ../src/NVIC_program.c
-Invoking: Cross ARM GNU C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/NVIC_program.d" -MT"src/NVIC_program.o" -c -o "src/NVIC_program.o" "../src/NVIC_program.c"
-../src/NVIC_program.c: In function 'MNVIC_voidDisablePeripheralInterrupt':
-../src/NVIC_program.c:35:46: warning: unused parameter 'Copy_u8PeripheralID' [-Wunused-parameter]
- void MNVIC_voidDisablePeripheralInterrupt(u8 Copy_u8PeripheralID)
-                                              ^~~~~~~~~~~~~~~~~~~
-../src/NVIC_program.c: In function 'MNVIC_voidClearPendingFlag':
-../src/NVIC_program.c:47:36: warning: unused parameter 'Copy_u8PeripheralID' [-Wunused-parameter]
- void MNVIC_voidClearPendingFlag(u8 Copy_u8PeripheralID)
-                                    ^~~~~~~~~~~~~~~~~~~
-../src/NVIC_program.c: In function 'MNVIC_u8GetActiveFlag':
-../src/NVIC_program.c:53:29: warning: unused parameter 'Copy_u8PeripheralID' [-Wunused-parameter]
- u8 MNVIC_u8GetActiveFlag(u8 Copy_u8PeripheralID)
-                             ^~~~~~~~~~~~~~~~~~~
-../src/NVIC_program.c:56:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-Finished building: ../src/NVIC_program.c
  
 Building file: ../src/RCC_program.c
 Invoking: Cross ARM GNU C Compiler
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/RCC_program.d" -MT"src/RCC_program.o" -c -o "src/RCC_program.o" "../src/RCC_program.c"
 Finished building: ../src/RCC_program.c
  
-Building file: ../src/STK_program.c
+Building file: ../src/SPI_program.c
 Invoking: Cross ARM GNU C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/STK_program.d" -MT"src/STK_program.o" -c -o "src/STK_program.o" "../src/STK_program.c"
-../src/STK_program.c: In function 'SysTick_Handler':
-../src/STK_program.c:163:6: warning: variable 'Local_u32TempVar' set but not used [-Wunused-but-set-variable]
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/SPI_program.d" -MT"src/SPI_program.o" -c -o "src/SPI_program.o" "../src/SPI_program.c"
+../src/SPI_program.c: In function 'MSPI_u8TrancieveSynchronous':
+../src/SPI_program.c:43:53: warning: unused parameter 'Copy_pu8ReceivedData' [-Wunused-parameter]
+ u8 MSPI_u8TrancieveSynchronous(u8 Copy_u8Data, u8 * Copy_pu8ReceivedData)
+                                                     ^~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/SPI_program.c
+ 
+Building file: ../src/SYSTIC_program.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/SYSTIC_program.d" -MT"src/SYSTIC_program.o" -c -o "src/SYSTIC_program.o" "../src/SYSTIC_program.c"
+../src/SYSTIC_program.c: In function 'SysTick_Handler':
+../src/SYSTIC_program.c:154:6: warning: variable 'Local_u32TempVar' set but not used [-Wunused-but-set-variable]
   u32 Local_u32TempVar;
       ^~~~~~~~~~~~~~~~
-Finished building: ../src/STK_program.c
+Finished building: ../src/SYSTIC_program.c
+ 
+Building file: ../src/TFT_program.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/TFT_program.d" -MT"src/TFT_program.o" -c -o "src/TFT_program.o" "../src/TFT_program.c"
+Finished building: ../src/TFT_program.c
  
 Building file: ../src/_initialize_hardware.c
 Invoking: Cross ARM GNU C Compiler
@@ -180,908 +157,108 @@ Invoking: Cross ARM GNU C Compiler
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -Wno-missing-prototypes -Wno-missing-declarations -MMD -MP -MF"src/stm32f4xx_hal_msp.d" -MT"src/stm32f4xx_hal_msp.d" -c -o "src/stm32f4xx_hal_msp.o" "../src/stm32f4xx_hal_msp.c"
 Finished building: ../src/stm32f4xx_hal_msp.c
  
-Building target: Hello_IR.elf
+Building target: TFT_Display_Image.elf
 Invoking: Cross ARM GNU C++ Linker
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"Hello_IR.map" --specs=nano.specs -o "Hello_IR.elf"  ./system/src/stm32f4-hal/stm32f4xx_hal.o ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o ./system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash.o ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o ./system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.o ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f4xx.o ./system/src/cmsis/vectors_stm32f401xc.o  ./src/EXTI_program.o ./src/GPIO_program.o ./src/NVIC_program.o ./src/RCC_program.o ./src/STK_program.o ./src/_initialize_hardware.o ./src/main.o ./src/stm32f4xx_hal_msp.o   
-Finished building target: Hello_IR.elf
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"TFT_Display_Image.map" --specs=nano.specs -o "TFT_Display_Image.elf"  ./system/src/stm32f4-hal/stm32f4xx_hal.o ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o ./system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash.o ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o ./system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.o ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f4xx.o ./system/src/cmsis/vectors_stm32f401xc.o  ./src/GPIO_program.o ./src/RCC_program.o ./src/SPI_program.o ./src/SYSTIC_program.o ./src/TFT_program.o ./src/_initialize_hardware.o ./src/main.o ./src/stm32f4xx_hal_msp.o   
+Finished building target: TFT_Display_Image.elf
  
 Invoking: Cross ARM GNU Create Flash Image
-arm-none-eabi-objcopy -O ihex "Hello_IR.elf"  "Hello_IR.hex"
-Finished building: Hello_IR.hex
+arm-none-eabi-objcopy -O ihex "TFT_Display_Image.elf"  "TFT_Display_Image.hex"
+Finished building: TFT_Display_Image.hex
  
 Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "Hello_IR.elf"
+arm-none-eabi-size --format=berkeley "TFT_Display_Image.elf"
    text	   data	    bss	    dec	    hex	filename
-   8363	    160	    692	   9215	   23ff	Hello_IR.elf
-Finished building: Hello_IR.siz
+  49579	    160	    420	  50159	   c3ef	TFT_Display_Image.elf
+Finished building: TFT_Display_Image.siz
  
-19:28:37 **** Incremental Build of configuration Debug for project Hello_IR ****
+03:12:31 **** Incremental Build of configuration Debug for project TFT_Display_Image ****
 make all 
-Building file: ../src/EXTI_program.c
+Building file: ../src/SPI_program.c
 Invoking: Cross ARM GNU C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/EXTI_program.d" -MT"src/EXTI_program.o" -c -o "src/EXTI_program.o" "../src/EXTI_program.c"
-Finished building: ../src/EXTI_program.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/SPI_program.d" -MT"src/SPI_program.o" -c -o "src/SPI_program.o" "../src/SPI_program.c"
+Finished building: ../src/SPI_program.c
  
-Building target: Hello_IR.elf
+Building target: TFT_Display_Image.elf
 Invoking: Cross ARM GNU C++ Linker
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"Hello_IR.map" --specs=nano.specs -o "Hello_IR.elf"  ./system/src/stm32f4-hal/stm32f4xx_hal.o ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o ./system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash.o ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o ./system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.o ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f4xx.o ./system/src/cmsis/vectors_stm32f401xc.o  ./src/EXTI_program.o ./src/GPIO_program.o ./src/NVIC_program.o ./src/RCC_program.o ./src/STK_program.o ./src/_initialize_hardware.o ./src/main.o ./src/stm32f4xx_hal_msp.o   
-Finished building target: Hello_IR.elf
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"TFT_Display_Image.map" --specs=nano.specs -o "TFT_Display_Image.elf"  ./system/src/stm32f4-hal/stm32f4xx_hal.o ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o ./system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash.o ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o ./system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.o ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f4xx.o ./system/src/cmsis/vectors_stm32f401xc.o  ./src/GPIO_program.o ./src/RCC_program.o ./src/SPI_program.o ./src/SYSTIC_program.o ./src/TFT_program.o ./src/_initialize_hardware.o ./src/main.o ./src/stm32f4xx_hal_msp.o   
+Finished building target: TFT_Display_Image.elf
  
 Invoking: Cross ARM GNU Create Flash Image
-arm-none-eabi-objcopy -O ihex "Hello_IR.elf"  "Hello_IR.hex"
-Finished building: Hello_IR.hex
+arm-none-eabi-objcopy -O ihex "TFT_Display_Image.elf"  "TFT_Display_Image.hex"
+Finished building: TFT_Display_Image.hex
  
 Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "Hello_IR.elf"
+arm-none-eabi-size --format=berkeley "TFT_Display_Image.elf"
    text	   data	    bss	    dec	    hex	filename
-   8363	    160	    692	   9215	   23ff	Hello_IR.elf
-Finished building: Hello_IR.siz
+  49579	    160	    420	  50159	   c3ef	TFT_Display_Image.elf
+Finished building: TFT_Display_Image.siz
  
-19:28:54 **** Incremental Build of configuration Debug for project Hello_IR ****
+03:15:51 **** Incremental Build of configuration Debug for project TFT_Display_Image ****
 make all 
 Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "Hello_IR.elf"
+arm-none-eabi-size --format=berkeley "TFT_Display_Image.elf"
    text	   data	    bss	    dec	    hex	filename
-   8363	    160	    692	   9215	   23ff	Hello_IR.elf
-Finished building: Hello_IR.siz
+  49579	    160	    420	  50159	   c3ef	TFT_Display_Image.elf
+Finished building: TFT_Display_Image.siz
  
-19:30:59 **** Incremental Build of configuration Debug for project Hello_IR ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "Hello_IR.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8363	    160	    692	   9215	   23ff	Hello_IR.elf
-Finished building: Hello_IR.siz
- 
-19:33:13 **** Incremental Build of configuration Debug for project Hello_IR ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "Hello_IR.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8363	    160	    692	   9215	   23ff	Hello_IR.elf
-Finished building: Hello_IR.siz
- 
-19:34:29 **** Incremental Build of configuration Debug for project Hello_IR ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "Hello_IR.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8363	    160	    692	   9215	   23ff	Hello_IR.elf
-Finished building: Hello_IR.siz
- 
-19:36:46 **** Incremental Build of configuration Debug for project Hello_IR ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "Hello_IR.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8363	    160	    692	   9215	   23ff	Hello_IR.elf
-Finished building: Hello_IR.siz
- 
-19:37:27 **** Incremental Build of configuration Debug for project Hello_IR ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "Hello_IR.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8363	    160	    692	   9215	   23ff	Hello_IR.elf
-Finished building: Hello_IR.siz
- 
-19:39:11 **** Incremental Build of configuration Debug for project Hello_IR ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "Hello_IR.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8363	    160	    692	   9215	   23ff	Hello_IR.elf
-Finished building: Hello_IR.siz
- 
-19:39:32 **** Incremental Build of configuration Debug for project Hello_IR ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "Hello_IR.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8363	    160	    692	   9215	   23ff	Hello_IR.elf
-Finished building: Hello_IR.siz
- 
-19:39:55 **** Incremental Build of configuration Debug for project Hello_IR ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "Hello_IR.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8363	    160	    692	   9215	   23ff	Hello_IR.elf
-Finished building: Hello_IR.siz
- 
-19:42:32 **** Incremental Build of configuration Debug for project Hello_IR ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "Hello_IR.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8363	    160	    692	   9215	   23ff	Hello_IR.elf
-Finished building: Hello_IR.siz
- 
-19:43:26 **** Incremental Build of configuration Debug for project Hello_IR ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "Hello_IR.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8363	    160	    692	   9215	   23ff	Hello_IR.elf
-Finished building: Hello_IR.siz
- 
-19:43:52 **** Incremental Build of configuration Debug for project Hello_IR ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "Hello_IR.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8363	    160	    692	   9215	   23ff	Hello_IR.elf
-Finished building: Hello_IR.siz
- 
-19:44:23 **** Incremental Build of configuration Debug for project Hello_IR ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "Hello_IR.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8363	    160	    692	   9215	   23ff	Hello_IR.elf
-Finished building: Hello_IR.siz
- 
-19:44:58 **** Incremental Build of configuration Debug for project Hello_IR ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "Hello_IR.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8363	    160	    692	   9215	   23ff	Hello_IR.elf
-Finished building: Hello_IR.siz
- 
-19:45:26 **** Incremental Build of configuration Debug for project Hello_IR ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "Hello_IR.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8363	    160	    692	   9215	   23ff	Hello_IR.elf
-Finished building: Hello_IR.siz
- 
-19:45:51 **** Incremental Build of configuration Debug for project Hello_IR ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "Hello_IR.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8363	    160	    692	   9215	   23ff	Hello_IR.elf
-Finished building: Hello_IR.siz
- 
-19:46:21 **** Incremental Build of configuration Debug for project Hello_IR ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "Hello_IR.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8363	    160	    692	   9215	   23ff	Hello_IR.elf
-Finished building: Hello_IR.siz
- 
-19:46:53 **** Incremental Build of configuration Debug for project Hello_IR ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "Hello_IR.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8363	    160	    692	   9215	   23ff	Hello_IR.elf
-Finished building: Hello_IR.siz
- 
-19:47:32 **** Incremental Build of configuration Debug for project Hello_IR ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "Hello_IR.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8363	    160	    692	   9215	   23ff	Hello_IR.elf
-Finished building: Hello_IR.siz
- 
-19:47:55 **** Incremental Build of configuration Debug for project Hello_IR ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "Hello_IR.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8363	    160	    692	   9215	   23ff	Hello_IR.elf
-Finished building: Hello_IR.siz
- 
-19:48:26 **** Incremental Build of configuration Debug for project Hello_IR ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "Hello_IR.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8363	    160	    692	   9215	   23ff	Hello_IR.elf
-Finished building: Hello_IR.siz
- 
-19:49:13 **** Incremental Build of configuration Debug for project Hello_IR ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "Hello_IR.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8363	    160	    692	   9215	   23ff	Hello_IR.elf
-Finished building: Hello_IR.siz
- 
-19:49:37 **** Incremental Build of configuration Debug for project Hello_IR ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "Hello_IR.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8363	    160	    692	   9215	   23ff	Hello_IR.elf
-Finished building: Hello_IR.siz
- 
-20:15:19 **** Build of configuration Debug for project IR_Remote_Test ****
-make all 
-Building file: ../src/IRReciever_program.c
-Invoking: Cross ARM GNU C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/IRReciever_program.d" -MT"src/IRReciever_program.o" -c -o "src/IRReciever_program.o" "../src/IRReciever_program.c"
-In file included from ../src/IRReciever_program.c:9:0:
-../src/IRReciever_program.c: In function 'HIRReciever_u8DecodeFrame':
-../src/IRReciever_program.c:99:64: warning: suggest parentheses around '-' inside '<<' [-Wparentheses]
-             CLEAR_BIT((*Copy_pu8RecievedData), Local_u8Counter - DATA_START_BIT);
-../include/BIT_MATH.h:13:43: note: in definition of macro 'CLEAR_BIT'
- #define CLEAR_BIT(Reg,bit) Reg=(Reg&(~(1<<bit)))
-                                           ^~~
-../src/IRReciever_program.c:103:62: warning: suggest parentheses around '-' inside '<<' [-Wparentheses]
-             SET_BIT((*Copy_pu8RecievedData), Local_u8Counter - DATA_START_BIT);
-../include/BIT_MATH.h:12:35: note: in definition of macro 'SET_BIT'
- #define SET_BIT(Reg,bit) Reg|=(1<<bit)
-                                   ^~~
-Finished building: ../src/IRReciever_program.c
- 
-Building file: ../src/SYSTIC_program.c
-Invoking: Cross ARM GNU C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/SYSTIC_program.d" -MT"src/SYSTIC_program.o" -c -o "src/SYSTIC_program.o" "../src/SYSTIC_program.c"
-../src/SYSTIC_program.c: In function 'MSYSTICK_u32GetElpasedTime':
-../src/SYSTIC_program.c:105:25: error: 'STK' undeclared (first use in this function)
-  Local_u32ElapsedTime = STK->LOAD - STK->VAL;
-                         ^~~
-../src/SYSTIC_program.c:105:25: note: each undeclared identifier is reported only once for each function it appears in
-../src/SYSTIC_program.c: In function 'MSYSTICK_u32GetRemainingTime':
-../src/SYSTIC_program.c:112:27: error: 'STK' undeclared (first use in this function)
-  Local_u32RemainingTime = STK->VAL;
-                           ^~~
-In file included from ../src/SYSTIC_program.c:9:0:
-../src/SYSTIC_program.c: In function 'MSTK_voidSetSingleInterval':
-../src/SYSTIC_program.c:119:12: error: 'STK' undeclared (first use in this function)
-  CLEAR_BIT(STK -> CTRL, STK_ENABLE);
-            ^
-../include/BIT_MATH.h:13:28: note: in definition of macro 'CLEAR_BIT'
- #define CLEAR_BIT(Reg,bit) Reg=(Reg&(~(1<<bit)))
-                            ^~~
-../src/SYSTIC_program.c:126:2: error: 'pvCallBackFunction' undeclared (first use in this function)
-  pvCallBackFunction = NotificationFunction;
-  ^~~~~~~~~~~~~~~~~~
-../src/SYSTIC_program.c:127:2: error: 'u8IntervalFlag' undeclared (first use in this function)
-  u8IntervalFlag = SINGLE_INTERVAL;
-  ^~~~~~~~~~~~~~
-../src/SYSTIC_program.c:127:19: error: 'SINGLE_INTERVAL' undeclared (first use in this function)
-  u8IntervalFlag = SINGLE_INTERVAL;
-                   ^~~~~~~~~~~~~~~
-../src/SYSTIC_program.c: In function 'MSTK_voidSetPeriodicInterval':
-../src/SYSTIC_program.c:138:2: error: 'STK' undeclared (first use in this function)
-  STK -> LOAD = Copy_u32Ticks;
-  ^~~
-../src/SYSTIC_program.c:140:2: error: 'pvCallBackFunction' undeclared (first use in this function)
-  pvCallBackFunction = NotificationFunction;
-  ^~~~~~~~~~~~~~~~~~
-../src/SYSTIC_program.c:141:2: error: 'u8IntervalFlag' undeclared (first use in this function)
-  u8IntervalFlag = PERIODIC_INTERVAL;
-  ^~~~~~~~~~~~~~
-../src/SYSTIC_program.c:141:19: error: 'PERIODIC_INTERVAL' undeclared (first use in this function)
-  u8IntervalFlag = PERIODIC_INTERVAL;
-                   ^~~~~~~~~~~~~~~~~
-../src/SYSTIC_program.c: In function 'SysTick_Handler':
-../src/SYSTIC_program.c:153:5: error: 'u8IntervalFlag' undeclared (first use in this function)
-  if(u8IntervalFlag == SINGLE_INTERVAL)
-     ^~~~~~~~~~~~~~
-../src/SYSTIC_program.c:153:23: error: 'SINGLE_INTERVAL' undeclared (first use in this function)
-  if(u8IntervalFlag == SINGLE_INTERVAL)
-                       ^~~~~~~~~~~~~~~
-../src/SYSTIC_program.c:155:3: error: 'STK' undeclared (first use in this function)
-   STK->LOAD = 0;
-   ^~~
-../src/SYSTIC_program.c:152:13: warning: variable 'Local_u32TempVar' set but not used [-Wunused-but-set-variable]
-         u32 Local_u32TempVar;
-             ^~~~~~~~~~~~~~~~
-make: *** [src/subdir.mk:44: src/SYSTIC_program.o] Error 1
-20:20:49 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
-make all 
-Building file: ../src/IRReciever_program.c
-Invoking: Cross ARM GNU C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/IRReciever_program.d" -MT"src/IRReciever_program.o" -c -o "src/IRReciever_program.o" "../src/IRReciever_program.c"
-Finished building: ../src/IRReciever_program.c
- 
-Building file: ../src/SYSTIC_program.c
-Invoking: Cross ARM GNU C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/SYSTIC_program.d" -MT"src/SYSTIC_program.o" -c -o "src/SYSTIC_program.o" "../src/SYSTIC_program.c"
-../src/SYSTIC_program.c: In function 'MSTK_voidSetSingleInterval':
-../src/SYSTIC_program.c:126:2: error: 'pvCallBackFunction' undeclared (first use in this function)
-  pvCallBackFunction = NotificationFunction;
-  ^~~~~~~~~~~~~~~~~~
-../src/SYSTIC_program.c:126:2: note: each undeclared identifier is reported only once for each function it appears in
-../src/SYSTIC_program.c:127:2: error: 'u8IntervalFlag' undeclared (first use in this function)
-  u8IntervalFlag = SINGLE_INTERVAL;
-  ^~~~~~~~~~~~~~
-../src/SYSTIC_program.c:127:19: error: 'SINGLE_INTERVAL' undeclared (first use in this function)
-  u8IntervalFlag = SINGLE_INTERVAL;
-                   ^~~~~~~~~~~~~~~
-../src/SYSTIC_program.c: In function 'MSTK_voidSetPeriodicInterval':
-../src/SYSTIC_program.c:140:2: error: 'pvCallBackFunction' undeclared (first use in this function)
-  pvCallBackFunction = NotificationFunction;
-  ^~~~~~~~~~~~~~~~~~
-../src/SYSTIC_program.c:141:2: error: 'u8IntervalFlag' undeclared (first use in this function)
-  u8IntervalFlag = PERIODIC_INTERVAL;
-  ^~~~~~~~~~~~~~
-../src/SYSTIC_program.c:141:19: error: 'PERIODIC_INTERVAL' undeclared (first use in this function)
-  u8IntervalFlag = PERIODIC_INTERVAL;
-                   ^~~~~~~~~~~~~~~~~
-../src/SYSTIC_program.c: In function 'SysTick_Handler':
-../src/SYSTIC_program.c:153:5: error: 'u8IntervalFlag' undeclared (first use in this function)
-  if(u8IntervalFlag == SINGLE_INTERVAL)
-     ^~~~~~~~~~~~~~
-../src/SYSTIC_program.c:153:23: error: 'SINGLE_INTERVAL' undeclared (first use in this function)
-  if(u8IntervalFlag == SINGLE_INTERVAL)
-                       ^~~~~~~~~~~~~~~
-../src/SYSTIC_program.c:152:13: warning: variable 'Local_u32TempVar' set but not used [-Wunused-but-set-variable]
-         u32 Local_u32TempVar;
-             ^~~~~~~~~~~~~~~~
-make: *** [src/subdir.mk:44: src/SYSTIC_program.o] Error 1
-20:22:26 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
-make all 
-Building file: ../src/SYSTIC_program.c
-Invoking: Cross ARM GNU C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/SYSTIC_program.d" -MT"src/SYSTIC_program.o" -c -o "src/SYSTIC_program.o" "../src/SYSTIC_program.c"
-../src/SYSTIC_program.c:120:2: warning: "/*" within comment [-Wcomment]
-  /*Disable STK*/
-   
-In file included from ../src/SYSTIC_program.c:9:0:
-../include/SYSTIC_private.h:21:36: error: expected identifier or '(' before 'volatile'
- #define     STK_CTRL            (*(volatile u32 *)0xE000E010)
-                                    ^
-../include/BIT_MATH.h:13:28: note: in definition of macro 'CLEAR_BIT'
- #define CLEAR_BIT(Reg,bit) Reg=(Reg&(~(1<<bit)))
-                            ^~~
-../src/SYSTIC_program.c:121:12: note: in expansion of macro 'STK_CTRL'
-  CLEAR_BIT(STK_CTRL, STK_ENABLE);
-            ^~~~~~~~
-../include/SYSTIC_private.h:21:51: error: expected ')' before numeric constant
- #define     STK_CTRL            (*(volatile u32 *)0xE000E010)
-                                                   ^
-../include/BIT_MATH.h:13:28: note: in definition of macro 'CLEAR_BIT'
- #define CLEAR_BIT(Reg,bit) Reg=(Reg&(~(1<<bit)))
-                            ^~~
-../src/SYSTIC_program.c:121:12: note: in expansion of macro 'STK_CTRL'
-  CLEAR_BIT(STK_CTRL, STK_ENABLE);
-            ^~~~~~~~
-In file included from ../src/SYSTIC_program.c:12:0:
-../include/SYSTIC_private.h:23:36: error: expected identifier or '(' before 'volatile'
- #define     STK_VAL             (*(volatile u32 *)0xE000E018)
-                                    ^
-../src/SYSTIC_program.c:123:2: note: in expansion of macro 'STK_VAL'
-  STK_VAL = 0;
-  ^~~~~~~
-../include/SYSTIC_private.h:23:51: error: expected ')' before numeric constant
- #define     STK_VAL             (*(volatile u32 *)0xE000E018)
-                                                   ^
-../src/SYSTIC_program.c:123:2: note: in expansion of macro 'STK_VAL'
-  STK_VAL = 0;
-  ^~~~~~~
-../include/SYSTIC_private.h:22:36: error: expected identifier or '(' before 'volatile'
- #define     STK_LOAD            (*(volatile u32 *)0xE000E014)
-                                    ^
-../src/SYSTIC_program.c:126:2: note: in expansion of macro 'STK_LOAD'
-  STK_LOAD = Copy_u32Ticks;
-  ^~~~~~~~
-../include/SYSTIC_private.h:22:51: error: expected ')' before numeric constant
- #define     STK_LOAD            (*(volatile u32 *)0xE000E014)
-                                                   ^
-../src/SYSTIC_program.c:126:2: note: in expansion of macro 'STK_LOAD'
-  STK_LOAD = Copy_u32Ticks;
-  ^~~~~~~~
-../src/SYSTIC_program.c:128:2: warning: data definition has no type or storage class
-  pvCallBackFunction = NotificationFunction;
-  ^~~~~~~~~~~~~~~~~~
-../src/SYSTIC_program.c:128:2: warning: type defaults to 'int' in declaration of 'pvCallBackFunction' [-Wimplicit-int]
-../src/SYSTIC_program.c:128:23: error: 'NotificationFunction' undeclared here (not in a function)
-  pvCallBackFunction = NotificationFunction;
-                       ^~~~~~~~~~~~~~~~~~~~
-../src/SYSTIC_program.c:129:2: warning: data definition has no type or storage class
-  u8IntervalFlag = SINGLE_INTERVAL;
-  ^~~~~~~~~~~~~~
-../src/SYSTIC_program.c:129:2: warning: type defaults to 'int' in declaration of 'u8IntervalFlag' [-Wimplicit-int]
-../src/SYSTIC_program.c:129:2: error: conflicting type qualifiers for 'u8IntervalFlag'
-../src/SYSTIC_program.c:15:13: note: previous declaration of 'u8IntervalFlag' was here
- volatile u8 u8IntervalFlag;
-             ^~~~~~~~~~~~~~
-../src/SYSTIC_program.c:129:19: error: 'SINGLE_INTERVAL' undeclared here (not in a function)
-  u8IntervalFlag = SINGLE_INTERVAL;
-                   ^~~~~~~~~~~~~~~
-In file included from ../src/SYSTIC_program.c:9:0:
-../include/SYSTIC_private.h:21:36: error: expected identifier or '(' before 'volatile'
- #define     STK_CTRL            (*(volatile u32 *)0xE000E010)
-                                    ^
-../include/BIT_MATH.h:12:26: note: in definition of macro 'SET_BIT'
- #define SET_BIT(Reg,bit) Reg|=(1<<bit)
-                          ^~~
-../src/SYSTIC_program.c:132:10: note: in expansion of macro 'STK_CTRL'
-  SET_BIT(STK_CTRL, STK_TICK_INT);
-          ^~~~~~~~
-../include/SYSTIC_private.h:21:51: error: expected ')' before numeric constant
- #define     STK_CTRL            (*(volatile u32 *)0xE000E010)
-                                                   ^
-../include/BIT_MATH.h:12:26: note: in definition of macro 'SET_BIT'
- #define SET_BIT(Reg,bit) Reg|=(1<<bit)
-                          ^~~
-../src/SYSTIC_program.c:132:10: note: in expansion of macro 'STK_CTRL'
-  SET_BIT(STK_CTRL, STK_TICK_INT);
-          ^~~~~~~~
-../include/SYSTIC_private.h:21:36: error: expected identifier or '(' before 'volatile'
- #define     STK_CTRL            (*(volatile u32 *)0xE000E010)
-                                    ^
-../include/BIT_MATH.h:12:26: note: in definition of macro 'SET_BIT'
- #define SET_BIT(Reg,bit) Reg|=(1<<bit)
-                          ^~~
-../src/SYSTIC_program.c:134:10: note: in expansion of macro 'STK_CTRL'
-  SET_BIT(STK_CTRL, STK_ENABLE);
-          ^~~~~~~~
-../include/SYSTIC_private.h:21:51: error: expected ')' before numeric constant
- #define     STK_CTRL            (*(volatile u32 *)0xE000E010)
-                                                   ^
-../include/BIT_MATH.h:12:26: note: in definition of macro 'SET_BIT'
- #define SET_BIT(Reg,bit) Reg|=(1<<bit)
-                          ^~~
-../src/SYSTIC_program.c:134:10: note: in expansion of macro 'STK_CTRL'
-  SET_BIT(STK_CTRL, STK_ENABLE);
-          ^~~~~~~~
-../src/SYSTIC_program.c:135:1: error: expected identifier or '(' before '}' token
- }
- ^
-../src/SYSTIC_program.c: In function 'MSTK_voidSetPeriodicInterval':
-../src/SYSTIC_program.c:142:21: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-  pvCallBackFunction = NotificationFunction;
-                     ^
-../src/SYSTIC_program.c:143:19: error: 'PERIODIC_INTERVAL' undeclared (first use in this function); did you mean 'SINGLE_INTERVAL'?
-  u8IntervalFlag = PERIODIC_INTERVAL;
-                   ^~~~~~~~~~~~~~~~~
-                   SINGLE_INTERVAL
-../src/SYSTIC_program.c:143:19: note: each undeclared identifier is reported only once for each function it appears in
-../src/SYSTIC_program.c: At top level:
-../src/SYSTIC_program.c:150:2: error: expected identifier or '(' before '/' token
- */
-  ^
-make: *** [src/subdir.mk:44: src/SYSTIC_program.o] Error 1
-20:24:04 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
-make all 
-Building file: ../src/SYSTIC_program.c
-Invoking: Cross ARM GNU C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/SYSTIC_program.d" -MT"src/SYSTIC_program.o" -c -o "src/SYSTIC_program.o" "../src/SYSTIC_program.c"
-../src/SYSTIC_program.c: In function 'SysTick_Handler':
-../src/SYSTIC_program.c:154:6: warning: variable 'Local_u32TempVar' set but not used [-Wunused-but-set-variable]
-  u32 Local_u32TempVar;
-      ^~~~~~~~~~~~~~~~
-Finished building: ../src/SYSTIC_program.c
- 
-Building file: ../src/main.c
-Invoking: Cross ARM GNU C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: IR_Remote_Test.elf
-Invoking: Cross ARM GNU C++ Linker
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"IR_Remote_Test.map" --specs=nano.specs -o "IR_Remote_Test.elf"  ./system/src/stm32f4-hal/stm32f4xx_hal.o ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o ./system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash.o ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o ./system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.o ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f4xx.o ./system/src/cmsis/vectors_stm32f401xc.o  ./src/EXTI_program.o ./src/GPIO_program.o ./src/IRReciever_program.o ./src/NVIC_program.o ./src/RCC_program.o ./src/SYSTIC_program.o ./src/_initialize_hardware.o ./src/main.o ./src/stm32f4xx_hal_msp.o   
-Finished building target: IR_Remote_Test.elf
- 
-Invoking: Cross ARM GNU Create Flash Image
-arm-none-eabi-objcopy -O ihex "IR_Remote_Test.elf"  "IR_Remote_Test.hex"
-Finished building: IR_Remote_Test.hex
- 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8411	    160	    648	   9219	   2403	IR_Remote_Test.elf
-Finished building: IR_Remote_Test.siz
- 
-20:26:33 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
-make all 
-Building file: ../src/IRReciever_program.c
-Invoking: Cross ARM GNU C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/IRReciever_program.d" -MT"src/IRReciever_program.o" -c -o "src/IRReciever_program.o" "../src/IRReciever_program.c"
-Finished building: ../src/IRReciever_program.c
- 
-Building target: IR_Remote_Test.elf
-Invoking: Cross ARM GNU C++ Linker
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"IR_Remote_Test.map" --specs=nano.specs -o "IR_Remote_Test.elf"  ./system/src/stm32f4-hal/stm32f4xx_hal.o ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o ./system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash.o ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o ./system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.o ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f4xx.o ./system/src/cmsis/vectors_stm32f401xc.o  ./src/EXTI_program.o ./src/GPIO_program.o ./src/IRReciever_program.o ./src/NVIC_program.o ./src/RCC_program.o ./src/SYSTIC_program.o ./src/_initialize_hardware.o ./src/main.o ./src/stm32f4xx_hal_msp.o   
-Finished building target: IR_Remote_Test.elf
- 
-Invoking: Cross ARM GNU Create Flash Image
-arm-none-eabi-objcopy -O ihex "IR_Remote_Test.elf"  "IR_Remote_Test.hex"
-Finished building: IR_Remote_Test.hex
- 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8491	    160	    648	   9299	   2453	IR_Remote_Test.elf
-Finished building: IR_Remote_Test.siz
- 
-20:27:01 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
+03:16:44 **** Incremental Build of configuration Debug for project TFT_Display_Image ****
 make all 
 Building file: ../src/main.c
 Invoking: Cross ARM GNU C Compiler
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
 Finished building: ../src/main.c
  
-Building target: IR_Remote_Test.elf
+Building target: TFT_Display_Image.elf
 Invoking: Cross ARM GNU C++ Linker
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"IR_Remote_Test.map" --specs=nano.specs -o "IR_Remote_Test.elf"  ./system/src/stm32f4-hal/stm32f4xx_hal.o ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o ./system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash.o ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o ./system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.o ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f4xx.o ./system/src/cmsis/vectors_stm32f401xc.o  ./src/EXTI_program.o ./src/GPIO_program.o ./src/IRReciever_program.o ./src/NVIC_program.o ./src/RCC_program.o ./src/SYSTIC_program.o ./src/_initialize_hardware.o ./src/main.o ./src/stm32f4xx_hal_msp.o   
-Finished building target: IR_Remote_Test.elf
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"TFT_Display_Image.map" --specs=nano.specs -o "TFT_Display_Image.elf"  ./system/src/stm32f4-hal/stm32f4xx_hal.o ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o ./system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash.o ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o ./system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.o ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f4xx.o ./system/src/cmsis/vectors_stm32f401xc.o  ./src/GPIO_program.o ./src/RCC_program.o ./src/SPI_program.o ./src/SYSTIC_program.o ./src/TFT_program.o ./src/_initialize_hardware.o ./src/main.o ./src/stm32f4xx_hal_msp.o   
+Finished building target: TFT_Display_Image.elf
  
 Invoking: Cross ARM GNU Create Flash Image
-arm-none-eabi-objcopy -O ihex "IR_Remote_Test.elf"  "IR_Remote_Test.hex"
-Finished building: IR_Remote_Test.hex
+arm-none-eabi-objcopy -O ihex "TFT_Display_Image.elf"  "TFT_Display_Image.hex"
+Finished building: TFT_Display_Image.hex
  
 Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
+arm-none-eabi-size --format=berkeley "TFT_Display_Image.elf"
    text	   data	    bss	    dec	    hex	filename
-   8491	    160	    648	   9299	   2453	IR_Remote_Test.elf
-Finished building: IR_Remote_Test.siz
+  49579	    160	    420	  50159	   c3ef	TFT_Display_Image.elf
+Finished building: TFT_Display_Image.siz
  
-20:28:10 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
-make all 
-Building file: ../src/IRReciever_program.c
-Invoking: Cross ARM GNU C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/IRReciever_program.d" -MT"src/IRReciever_program.o" -c -o "src/IRReciever_program.o" "../src/IRReciever_program.c"
-Finished building: ../src/IRReciever_program.c
- 
-Building target: IR_Remote_Test.elf
-Invoking: Cross ARM GNU C++ Linker
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"IR_Remote_Test.map" --specs=nano.specs -o "IR_Remote_Test.elf"  ./system/src/stm32f4-hal/stm32f4xx_hal.o ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o ./system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash.o ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o ./system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.o ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f4xx.o ./system/src/cmsis/vectors_stm32f401xc.o  ./src/EXTI_program.o ./src/GPIO_program.o ./src/IRReciever_program.o ./src/NVIC_program.o ./src/RCC_program.o ./src/SYSTIC_program.o ./src/_initialize_hardware.o ./src/main.o ./src/stm32f4xx_hal_msp.o   
-Finished building target: IR_Remote_Test.elf
- 
-Invoking: Cross ARM GNU Create Flash Image
-arm-none-eabi-objcopy -O ihex "IR_Remote_Test.elf"  "IR_Remote_Test.hex"
-Finished building: IR_Remote_Test.hex
- 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8491	    160	    648	   9299	   2453	IR_Remote_Test.elf
-Finished building: IR_Remote_Test.siz
- 
-20:28:16 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
+03:16:50 **** Incremental Build of configuration Debug for project TFT_Display_Image ****
 make all 
 Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
+arm-none-eabi-size --format=berkeley "TFT_Display_Image.elf"
    text	   data	    bss	    dec	    hex	filename
-   8491	    160	    648	   9299	   2453	IR_Remote_Test.elf
-Finished building: IR_Remote_Test.siz
+  49579	    160	    420	  50159	   c3ef	TFT_Display_Image.elf
+Finished building: TFT_Display_Image.siz
  
-20:54:49 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8491	    160	    648	   9299	   2453	IR_Remote_Test.elf
-Finished building: IR_Remote_Test.siz
- 
-21:02:35 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
-make all 
-Building file: ../src/IRReciever_program.c
-Invoking: Cross ARM GNU C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/IRReciever_program.d" -MT"src/IRReciever_program.o" -c -o "src/IRReciever_program.o" "../src/IRReciever_program.c"
-Finished building: ../src/IRReciever_program.c
- 
-Building target: IR_Remote_Test.elf
-Invoking: Cross ARM GNU C++ Linker
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"IR_Remote_Test.map" --specs=nano.specs -o "IR_Remote_Test.elf"  ./system/src/stm32f4-hal/stm32f4xx_hal.o ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o ./system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash.o ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o ./system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.o ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f4xx.o ./system/src/cmsis/vectors_stm32f401xc.o  ./src/EXTI_program.o ./src/GPIO_program.o ./src/IRReciever_program.o ./src/NVIC_program.o ./src/RCC_program.o ./src/SYSTIC_program.o ./src/_initialize_hardware.o ./src/main.o ./src/stm32f4xx_hal_msp.o   
-Finished building target: IR_Remote_Test.elf
- 
-Invoking: Cross ARM GNU Create Flash Image
-arm-none-eabi-objcopy -O ihex "IR_Remote_Test.elf"  "IR_Remote_Test.hex"
-Finished building: IR_Remote_Test.hex
- 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8523	    160	    648	   9331	   2473	IR_Remote_Test.elf
-Finished building: IR_Remote_Test.siz
- 
-21:02:43 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8523	    160	    648	   9331	   2473	IR_Remote_Test.elf
-Finished building: IR_Remote_Test.siz
- 
-21:13:34 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
-make all 
-Building file: ../src/IRReciever_program.c
-Invoking: Cross ARM GNU C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/IRReciever_program.d" -MT"src/IRReciever_program.o" -c -o "src/IRReciever_program.o" "../src/IRReciever_program.c"
-Finished building: ../src/IRReciever_program.c
- 
-Building target: IR_Remote_Test.elf
-Invoking: Cross ARM GNU C++ Linker
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"IR_Remote_Test.map" --specs=nano.specs -o "IR_Remote_Test.elf"  ./system/src/stm32f4-hal/stm32f4xx_hal.o ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o ./system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash.o ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o ./system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.o ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f4xx.o ./system/src/cmsis/vectors_stm32f401xc.o  ./src/EXTI_program.o ./src/GPIO_program.o ./src/IRReciever_program.o ./src/NVIC_program.o ./src/RCC_program.o ./src/SYSTIC_program.o ./src/_initialize_hardware.o ./src/main.o ./src/stm32f4xx_hal_msp.o   
-Finished building target: IR_Remote_Test.elf
- 
-Invoking: Cross ARM GNU Create Flash Image
-arm-none-eabi-objcopy -O ihex "IR_Remote_Test.elf"  "IR_Remote_Test.hex"
-Finished building: IR_Remote_Test.hex
- 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8539	    160	    648	   9347	   2483	IR_Remote_Test.elf
-Finished building: IR_Remote_Test.siz
- 
-21:13:42 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8539	    160	    648	   9347	   2483	IR_Remote_Test.elf
-Finished building: IR_Remote_Test.siz
- 
-21:17:38 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
-make all 
-Building file: ../src/IRReciever_program.c
-Invoking: Cross ARM GNU C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/IRReciever_program.d" -MT"src/IRReciever_program.o" -c -o "src/IRReciever_program.o" "../src/IRReciever_program.c"
-Finished building: ../src/IRReciever_program.c
- 
-Building target: IR_Remote_Test.elf
-Invoking: Cross ARM GNU C++ Linker
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"IR_Remote_Test.map" --specs=nano.specs -o "IR_Remote_Test.elf"  ./system/src/stm32f4-hal/stm32f4xx_hal.o ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o ./system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash.o ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o ./system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.o ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f4xx.o ./system/src/cmsis/vectors_stm32f401xc.o  ./src/EXTI_program.o ./src/GPIO_program.o ./src/IRReciever_program.o ./src/NVIC_program.o ./src/RCC_program.o ./src/SYSTIC_program.o ./src/_initialize_hardware.o ./src/main.o ./src/stm32f4xx_hal_msp.o   
-Finished building target: IR_Remote_Test.elf
- 
-Invoking: Cross ARM GNU Create Flash Image
-arm-none-eabi-objcopy -O ihex "IR_Remote_Test.elf"  "IR_Remote_Test.hex"
-Finished building: IR_Remote_Test.hex
- 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8539	    160	    648	   9347	   2483	IR_Remote_Test.elf
-Finished building: IR_Remote_Test.siz
- 
-21:17:46 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8539	    160	    648	   9347	   2483	IR_Remote_Test.elf
-Finished building: IR_Remote_Test.siz
- 
-21:18:51 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
-make all 
-Building file: ../src/IRReciever_program.c
-Invoking: Cross ARM GNU C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/IRReciever_program.d" -MT"src/IRReciever_program.o" -c -o "src/IRReciever_program.o" "../src/IRReciever_program.c"
-Finished building: ../src/IRReciever_program.c
- 
-Building target: IR_Remote_Test.elf
-Invoking: Cross ARM GNU C++ Linker
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"IR_Remote_Test.map" --specs=nano.specs -o "IR_Remote_Test.elf"  ./system/src/stm32f4-hal/stm32f4xx_hal.o ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o ./system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash.o ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o ./system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.o ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f4xx.o ./system/src/cmsis/vectors_stm32f401xc.o  ./src/EXTI_program.o ./src/GPIO_program.o ./src/IRReciever_program.o ./src/NVIC_program.o ./src/RCC_program.o ./src/SYSTIC_program.o ./src/_initialize_hardware.o ./src/main.o ./src/stm32f4xx_hal_msp.o   
-Finished building target: IR_Remote_Test.elf
- 
-Invoking: Cross ARM GNU Create Flash Image
-arm-none-eabi-objcopy -O ihex "IR_Remote_Test.elf"  "IR_Remote_Test.hex"
-Finished building: IR_Remote_Test.hex
- 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8539	    160	    648	   9347	   2483	IR_Remote_Test.elf
-Finished building: IR_Remote_Test.siz
- 
-21:19:06 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8539	    160	    648	   9347	   2483	IR_Remote_Test.elf
-Finished building: IR_Remote_Test.siz
- 
-21:26:54 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
+03:17:21 **** Incremental Build of configuration Debug for project TFT_Display_Image ****
 make all 
 Building file: ../src/main.c
 Invoking: Cross ARM GNU C Compiler
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
 Finished building: ../src/main.c
  
-Building target: IR_Remote_Test.elf
+Building target: TFT_Display_Image.elf
 Invoking: Cross ARM GNU C++ Linker
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"IR_Remote_Test.map" --specs=nano.specs -o "IR_Remote_Test.elf"  ./system/src/stm32f4-hal/stm32f4xx_hal.o ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o ./system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash.o ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o ./system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.o ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f4xx.o ./system/src/cmsis/vectors_stm32f401xc.o  ./src/EXTI_program.o ./src/GPIO_program.o ./src/IRReciever_program.o ./src/NVIC_program.o ./src/RCC_program.o ./src/SYSTIC_program.o ./src/_initialize_hardware.o ./src/main.o ./src/stm32f4xx_hal_msp.o   
-Finished building target: IR_Remote_Test.elf
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"TFT_Display_Image.map" --specs=nano.specs -o "TFT_Display_Image.elf"  ./system/src/stm32f4-hal/stm32f4xx_hal.o ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o ./system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash.o ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o ./system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.o ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f4xx.o ./system/src/cmsis/vectors_stm32f401xc.o  ./src/GPIO_program.o ./src/RCC_program.o ./src/SPI_program.o ./src/SYSTIC_program.o ./src/TFT_program.o ./src/_initialize_hardware.o ./src/main.o ./src/stm32f4xx_hal_msp.o   
+Finished building target: TFT_Display_Image.elf
  
 Invoking: Cross ARM GNU Create Flash Image
-arm-none-eabi-objcopy -O ihex "IR_Remote_Test.elf"  "IR_Remote_Test.hex"
-Finished building: IR_Remote_Test.hex
+arm-none-eabi-objcopy -O ihex "TFT_Display_Image.elf"  "TFT_Display_Image.hex"
+Finished building: TFT_Display_Image.hex
  
 Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
+arm-none-eabi-size --format=berkeley "TFT_Display_Image.elf"
    text	   data	    bss	    dec	    hex	filename
-   8811	    160	    652	   9623	   2597	IR_Remote_Test.elf
-Finished building: IR_Remote_Test.siz
+  49579	    160	    420	  50159	   c3ef	TFT_Display_Image.elf
+Finished building: TFT_Display_Image.siz
  
-21:28:34 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
-make all 
-Building file: ../src/main.c
-Invoking: Cross ARM GNU C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: IR_Remote_Test.elf
-Invoking: Cross ARM GNU C++ Linker
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"IR_Remote_Test.map" --specs=nano.specs -o "IR_Remote_Test.elf"  ./system/src/stm32f4-hal/stm32f4xx_hal.o ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o ./system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash.o ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o ./system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.o ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f4xx.o ./system/src/cmsis/vectors_stm32f401xc.o  ./src/EXTI_program.o ./src/GPIO_program.o ./src/IRReciever_program.o ./src/NVIC_program.o ./src/RCC_program.o ./src/SYSTIC_program.o ./src/_initialize_hardware.o ./src/main.o ./src/stm32f4xx_hal_msp.o   
-Finished building target: IR_Remote_Test.elf
- 
-Invoking: Cross ARM GNU Create Flash Image
-arm-none-eabi-objcopy -O ihex "IR_Remote_Test.elf"  "IR_Remote_Test.hex"
-Finished building: IR_Remote_Test.hex
- 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8811	    160	    652	   9623	   2597	IR_Remote_Test.elf
-Finished building: IR_Remote_Test.siz
- 
-21:28:55 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
+03:17:27 **** Incremental Build of configuration Debug for project TFT_Display_Image ****
 make all 
 Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
+arm-none-eabi-size --format=berkeley "TFT_Display_Image.elf"
    text	   data	    bss	    dec	    hex	filename
-   8811	    160	    652	   9623	   2597	IR_Remote_Test.elf
-Finished building: IR_Remote_Test.siz
- 
-21:30:22 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
-make all 
-Building file: ../src/main.c
-Invoking: Cross ARM GNU C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: IR_Remote_Test.elf
-Invoking: Cross ARM GNU C++ Linker
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"IR_Remote_Test.map" --specs=nano.specs -o "IR_Remote_Test.elf"  ./system/src/stm32f4-hal/stm32f4xx_hal.o ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o ./system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash.o ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o ./system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.o ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f4xx.o ./system/src/cmsis/vectors_stm32f401xc.o  ./src/EXTI_program.o ./src/GPIO_program.o ./src/IRReciever_program.o ./src/NVIC_program.o ./src/RCC_program.o ./src/SYSTIC_program.o ./src/_initialize_hardware.o ./src/main.o ./src/stm32f4xx_hal_msp.o   
-Finished building target: IR_Remote_Test.elf
- 
-Invoking: Cross ARM GNU Create Flash Image
-arm-none-eabi-objcopy -O ihex "IR_Remote_Test.elf"  "IR_Remote_Test.hex"
-Finished building: IR_Remote_Test.hex
- 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8811	    160	    652	   9623	   2597	IR_Remote_Test.elf
-Finished building: IR_Remote_Test.siz
- 
-21:30:32 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8811	    160	    652	   9623	   2597	IR_Remote_Test.elf
-Finished building: IR_Remote_Test.siz
- 
-21:32:55 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
-make all 
-Building file: ../src/main.c
-Invoking: Cross ARM GNU C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: IR_Remote_Test.elf
-Invoking: Cross ARM GNU C++ Linker
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"IR_Remote_Test.map" --specs=nano.specs -o "IR_Remote_Test.elf"  ./system/src/stm32f4-hal/stm32f4xx_hal.o ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o ./system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash.o ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o ./system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.o ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f4xx.o ./system/src/cmsis/vectors_stm32f401xc.o  ./src/EXTI_program.o ./src/GPIO_program.o ./src/IRReciever_program.o ./src/NVIC_program.o ./src/RCC_program.o ./src/SYSTIC_program.o ./src/_initialize_hardware.o ./src/main.o ./src/stm32f4xx_hal_msp.o   
-Finished building target: IR_Remote_Test.elf
- 
-Invoking: Cross ARM GNU Create Flash Image
-arm-none-eabi-objcopy -O ihex "IR_Remote_Test.elf"  "IR_Remote_Test.hex"
-Finished building: IR_Remote_Test.hex
- 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8811	    160	    652	   9623	   2597	IR_Remote_Test.elf
-Finished building: IR_Remote_Test.siz
- 
-21:33:04 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8811	    160	    652	   9623	   2597	IR_Remote_Test.elf
-Finished building: IR_Remote_Test.siz
- 
-21:35:21 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
-make all 
-Building file: ../src/IRReciever_program.c
-Invoking: Cross ARM GNU C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/IRReciever_program.d" -MT"src/IRReciever_program.o" -c -o "src/IRReciever_program.o" "../src/IRReciever_program.c"
-Finished building: ../src/IRReciever_program.c
- 
-Building target: IR_Remote_Test.elf
-Invoking: Cross ARM GNU C++ Linker
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"IR_Remote_Test.map" --specs=nano.specs -o "IR_Remote_Test.elf"  ./system/src/stm32f4-hal/stm32f4xx_hal.o ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o ./system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash.o ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o ./system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.o ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f4xx.o ./system/src/cmsis/vectors_stm32f401xc.o  ./src/EXTI_program.o ./src/GPIO_program.o ./src/IRReciever_program.o ./src/NVIC_program.o ./src/RCC_program.o ./src/SYSTIC_program.o ./src/_initialize_hardware.o ./src/main.o ./src/stm32f4xx_hal_msp.o   
-Finished building target: IR_Remote_Test.elf
- 
-Invoking: Cross ARM GNU Create Flash Image
-arm-none-eabi-objcopy -O ihex "IR_Remote_Test.elf"  "IR_Remote_Test.hex"
-Finished building: IR_Remote_Test.hex
- 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8811	    160	    652	   9623	   2597	IR_Remote_Test.elf
-Finished building: IR_Remote_Test.siz
- 
-21:35:31 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8811	    160	    652	   9623	   2597	IR_Remote_Test.elf
-Finished building: IR_Remote_Test.siz
- 
-22:01:16 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
-make all 
-Building file: ../src/IRReciever_program.c
-Invoking: Cross ARM GNU C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/IRReciever_program.d" -MT"src/IRReciever_program.o" -c -o "src/IRReciever_program.o" "../src/IRReciever_program.c"
-Finished building: ../src/IRReciever_program.c
- 
-Building target: IR_Remote_Test.elf
-Invoking: Cross ARM GNU C++ Linker
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"IR_Remote_Test.map" --specs=nano.specs -o "IR_Remote_Test.elf"  ./system/src/stm32f4-hal/stm32f4xx_hal.o ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o ./system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash.o ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o ./system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.o ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f4xx.o ./system/src/cmsis/vectors_stm32f401xc.o  ./src/EXTI_program.o ./src/GPIO_program.o ./src/IRReciever_program.o ./src/NVIC_program.o ./src/RCC_program.o ./src/SYSTIC_program.o ./src/_initialize_hardware.o ./src/main.o ./src/stm32f4xx_hal_msp.o   
-Finished building target: IR_Remote_Test.elf
- 
-Invoking: Cross ARM GNU Create Flash Image
-arm-none-eabi-objcopy -O ihex "IR_Remote_Test.elf"  "IR_Remote_Test.hex"
-Finished building: IR_Remote_Test.hex
- 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8811	    160	    652	   9623	   2597	IR_Remote_Test.elf
-Finished building: IR_Remote_Test.siz
- 
-22:01:24 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8811	    160	    652	   9623	   2597	IR_Remote_Test.elf
-Finished building: IR_Remote_Test.siz
- 
-22:01:28 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8811	    160	    652	   9623	   2597	IR_Remote_Test.elf
-Finished building: IR_Remote_Test.siz
- 
-22:02:16 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
-make all 
-Building file: ../src/IRReciever_program.c
-Invoking: Cross ARM GNU C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/IRReciever_program.d" -MT"src/IRReciever_program.o" -c -o "src/IRReciever_program.o" "../src/IRReciever_program.c"
-Finished building: ../src/IRReciever_program.c
- 
-Building target: IR_Remote_Test.elf
-Invoking: Cross ARM GNU C++ Linker
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"IR_Remote_Test.map" --specs=nano.specs -o "IR_Remote_Test.elf"  ./system/src/stm32f4-hal/stm32f4xx_hal.o ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o ./system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash.o ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o ./system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.o ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f4xx.o ./system/src/cmsis/vectors_stm32f401xc.o  ./src/EXTI_program.o ./src/GPIO_program.o ./src/IRReciever_program.o ./src/NVIC_program.o ./src/RCC_program.o ./src/SYSTIC_program.o ./src/_initialize_hardware.o ./src/main.o ./src/stm32f4xx_hal_msp.o   
-Finished building target: IR_Remote_Test.elf
- 
-Invoking: Cross ARM GNU Create Flash Image
-arm-none-eabi-objcopy -O ihex "IR_Remote_Test.elf"  "IR_Remote_Test.hex"
-Finished building: IR_Remote_Test.hex
- 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8811	    160	    652	   9623	   2597	IR_Remote_Test.elf
-Finished building: IR_Remote_Test.siz
- 
-22:02:21 **** Incremental Build of configuration Debug for project IR_Remote_Test ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "IR_Remote_Test.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8811	    160	    652	   9623	   2597	IR_Remote_Test.elf
-Finished building: IR_Remote_Test.siz
+  49579	    160	    420	  50159	   c3ef	TFT_Display_Image.elf
+Finished building: TFT_Display_Image.siz
  

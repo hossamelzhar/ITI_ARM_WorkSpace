@@ -8,7 +8,10 @@
         "irreciever_interface.h": "c",
         "irreciever_config.h": "c",
         "gpio_interface.h": "c",
-        "spi_config.h": "c"
+        "spi_config.h": "c",
+        "spi_interface.h": "c",
+        "tft_config.h": "c",
+        "tft_interface.h": "c"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }

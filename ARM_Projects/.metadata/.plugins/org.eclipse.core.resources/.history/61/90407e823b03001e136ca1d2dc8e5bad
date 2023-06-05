@@ -1,0 +1,15 @@
+#include "BIT_MATH.h"
+#include "STD_Types.h"
+
+#include "TFT_interface.h"
+
+#include "RCC_interface.h"
+#include "SPI_interface.h"
+#include "SYSTIC_interface.h"
+
+
+void main(void)
+{
+	MRCC_voidInit();
+	MRCC_voidEnablePeripheralClock(RCC_AHP1, RCC_SPI1_ID);
+}

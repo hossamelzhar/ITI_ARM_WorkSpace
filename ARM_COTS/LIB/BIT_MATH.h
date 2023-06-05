@@ -14,4 +14,7 @@
 #define TOGGLE_BIT(Reg,bit) Reg^=(1<<bit)
 #define GET_BIT(Reg,bit) ((Reg>>bit)&1)
 
+#define BIT_MSK_32                  0xFFFFFFFF
+#define BIT_MSK(NUM_OF_BITS)        (BIT_MSK_32>>(32-NUM_OF_BITS))
+
 #endif

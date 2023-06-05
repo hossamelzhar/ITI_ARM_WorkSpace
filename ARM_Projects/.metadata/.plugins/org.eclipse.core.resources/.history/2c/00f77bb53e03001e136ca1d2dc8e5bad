@@ -1,0 +1,27 @@
+#include "BIT_MATH.h"
+#include "STD_Types.h"
+#include "MessiImage.h"
+
+#include "TFT_interface.h"
+
+#include "RCC_interface.h"
+#include "SPI_interface.h"
+#include "SYSTIC_interface.h"
+
+
+void main(void)
+{
+	MRCC_voidInit();
+	MRCC_voidEnablePeripheralClock(RCC_APB2, SPI1_ID);
+	MRCC_voidEnablePeripheralClock(RCC_AHB1, GPIOA_ID);
+
+	MSYSTICK_voidInit();
+
+	MSPI1_voidInit();
+	HTFT_voidInit();
+
+	while(1)
+	{
+		HTFT_voidDisplayImage(MessiImage);
+	}
+}

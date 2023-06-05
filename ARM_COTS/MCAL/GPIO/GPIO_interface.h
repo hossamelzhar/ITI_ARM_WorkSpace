@@ -333,6 +333,8 @@ void MGPIO_voidSetConfiguredAtomicPinValue(MGPIO_Pin_t* pPin, u8 Copy_u8Value);
 /* Configure all the pin members before calling this funciton */
 void MGPIO_voidConfigurePin(MGPIO_Pin_t* pPin);
 
+void MGPIO_voidSetPinAlternateFunction(u8 Copy_u8Port, u8 Copy_u8PinNumber, u8 Copy_u8Function);
+
 
 
 

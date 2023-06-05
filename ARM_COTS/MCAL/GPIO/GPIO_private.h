@@ -19,8 +19,7 @@ typedef struct
     volatile u16 GPIOx_BSRR_SET;
     volatile u16 GPIOx_BSRR_RESET;
     volatile u32 GPIOx_LCKR;
-    volatile u32 GPIOx_AFRL;
-    volatile u32 GPIOx_AFRH;
+    volatile u32 GPIOx_AFR[2];
 }GPIO_t;
 
 

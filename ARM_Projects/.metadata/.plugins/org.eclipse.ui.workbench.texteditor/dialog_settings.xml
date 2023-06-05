@@ -2,33 +2,37 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="IRReciever_u32FrameArray" key="selection"/>
+		<item value="LOW_SPEED" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="MGPIO_LOW_SPEED"/>
+			<item value="MGPIO_OUTPUT"/>
+			<item value="MGPIO_OUTPUT_LOW"/>
+			<item value="MGPIO_OUTPUT_HIGH"/>
 			<item value="IRReciever_u8FrameArray"/>
 			<item value="mem"/>
 			<item value="memcpy"/>
 			<item value="2273"/>
-			<item value="Local_s8Counter"/>
-			<item value="Local_u8Counter"/>
-			<item value="CLR_BIT"/>
 		</list>
 		<list key="replacehistory">
+			<item value="LOW_SPEED"/>
+			<item value="OUTPUT"/>
+			<item value="LOW"/>
+			<item value="HIGH"/>
 			<item value="IRReciever_u32FrameArray"/>
 			<item value="1700"/>
 			<item value="Local_u8Counter"/>
 			<item value="Local_s8Counter"/>
-			<item value="CLEAR_BIT"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="284" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="391" key="DIALOG_HEIGHT"/>
-		<item value="670" key="DIALOG_X_ORIGIN"/>
-		<item value="253" key="DIALOG_Y_ORIGIN"/>
+		<item value="959" key="DIALOG_X_ORIGIN"/>
+		<item value="224" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
